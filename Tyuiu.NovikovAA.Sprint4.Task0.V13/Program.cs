@@ -8,7 +8,7 @@ namespace Tyuiu.NovikovAA.Sprint4.Task0.V13
         static void Main(string[] args)
         {
             DataService ds = new DataService();
-            Console.WriteLine("********************************************************************");
+            Console.WriteLine("********************************************************************"); 
             Console.WriteLine("Исходные данные");
             Console.WriteLine("********************************************************************");
 
