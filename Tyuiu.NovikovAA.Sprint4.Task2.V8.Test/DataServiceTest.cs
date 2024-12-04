@@ -12,10 +12,10 @@ namespace Tyuiu.NovikovAA.Sprint4.Task2.V8.Test
         {
             DataService ds = new DataService();
             
-            int[] numsArray = { 2, 2, 3, 4, 5, 3, 6, 4, 6, 7, 7 };
+            int[] numsArray = { 5, 5, 4, 7, 3, 4, 5, 2, 2, 5, 2 };
 
             int res = ds.Calculate(numsArray);
-            int wait = 31;
+            int wait = 27;
 
             Assert.AreEqual(wait, res);
         }
