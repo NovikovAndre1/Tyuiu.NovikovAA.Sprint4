@@ -12,7 +12,7 @@ namespace Tyuiu.NovikovAA.Sprint4.Task2.V8.Lib
 
             for (int i = 0; i <= array.Length-1; i++) 
             {
-                if (array[i] > 4)
+                if (array[i] % 2 != 0)
                 {
                     sumArray += array[i];
                 }
