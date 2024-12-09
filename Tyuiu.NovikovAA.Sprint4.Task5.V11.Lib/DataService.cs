@@ -8,17 +8,25 @@ namespace Tyuiu.NovikovAA.Sprint4.Task5.V11.Lib
     {
         public int[,] Calculate(int[,] matrix)
         {
-            for (int i = 0; i < matrix.GetLength(0); i++)
+            int rows = matrix.GetLength(0);
+            int cols = matrix.GetLength(1);
+            int[,] resultMatrix = new int[rows, cols];
+
+            for (int i = 0; i < rows; i++)
             {
-                for (int j = 0; j < matrix.GetLength(1); j++)
+                for (int j = 0; j < cols; j++)
                 {
                     if (matrix[i, j] > 0)
                     {
-                        matrix[i, j] = 1;
+                        resultMatrix[i, j] = 1;
+                    }
+                    else
+                    {
+                        resultMatrix[i, j] = matrix[i, j]; // Копируем значение, если оно не > 0
                     }
                 }
             }
-            return matrix;
+            return resultMatrix;
         }
     }
 }

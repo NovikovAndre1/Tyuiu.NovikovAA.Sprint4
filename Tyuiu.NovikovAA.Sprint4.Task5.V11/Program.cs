@@ -50,8 +50,17 @@ namespace Tyuiu.NovikovAA.Sprint4.Task5.V11
             Console.WriteLine("РЕЗУЛЬТАТ");
             Console.WriteLine("********************************************************************");
 
-            Console.WriteLine(ds.Calculate(mtrx));
 
+            int[,] res = ds.Calculate(mtrx);
+            Console.WriteLine("\nРезультат:");
+            for (int i = 0; i < rows; i++)
+            {
+                for (int j = 0; j < colums; j++)
+                {
+                    Console.Write(res[i, j] + " "); // Убрали ,4
+                }
+                Console.WriteLine();
+            }
 
             Console.ReadKey();
 
