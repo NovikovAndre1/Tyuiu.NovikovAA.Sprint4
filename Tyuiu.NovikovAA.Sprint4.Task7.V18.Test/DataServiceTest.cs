@@ -15,7 +15,7 @@ namespace Tyuiu.NovikovAA.Sprint4.Task7.V18.Test
             int[,] mtrx = new int[n, m];
             string str = "145258749635789";
             int res = ds.Calculate(n, m, str);
-            int wait = 6;
+            int wait = 12288;
             Assert.AreEqual(wait, res);
         }
     }

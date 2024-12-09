@@ -17,18 +17,18 @@ namespace Tyuiu.NovikovAA.Sprint4.Task7.V18.Lib
                 }
             }
 
-            int count = 0;
+            int product = 1;
             for (int i = 0; i < n; i++)
             {
                 for (int j = 0; j < m; j++)
                 {
                     if (mtrx[i, j] % 2 == 0)
                     {
-                        count++;
+                        product *= mtrx[i, j];
                     }
                 }
             }
-            return count;
+            return product;
         }
     }
 }
